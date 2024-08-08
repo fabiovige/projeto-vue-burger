@@ -1,0 +1,3 @@
+GET http://localhost:3000/ingredientes
+Content-Type: application/json
+
