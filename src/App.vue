@@ -1,5 +1,5 @@
 <template>
-  <Navbar />
+  <Navbar :logo="logo_src" :alt="app_name" />
   <router-view />
   <Footer />
 </template>
@@ -12,6 +12,12 @@ export default {
   components: {
     Navbar,
     Footer,
+  },
+  data() {
+    return {
+      app_name: 'Fabio Vige',
+      logo_src: require('@/assets/logo.png'),
+    }
   },
 }
 </script>
